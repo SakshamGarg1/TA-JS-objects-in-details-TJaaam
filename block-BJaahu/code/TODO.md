@@ -22,6 +22,7 @@ For each different ways of creating object write different solutions.
 You can use the data given below. You will also have to change the name of the function while calling them.
 
 ```js
+
 let firstQuestion = new Question(
   'Where is the capital of Jordan',
   ['Tashkent', 'Amaan', 'Kuwait City', 'Nairobi'],
