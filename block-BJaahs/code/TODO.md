@@ -23,6 +23,29 @@ For each different ways of creating object write different solutions.
 
 ### To test use the following data
 
+
+
+function isAnswerCorrect(index){
+    return index === correctAnswerIndex;
+};
+
+function getCorrectAnswer(){
+    return options[correctAnswerIndex];
+};
+
+
+let question = {title: 'Where is the capital of Jordan',
+options: ['Tashkent', 'Amaan', 'Kuwait City', 'Nairobi'],
+correctAnswerIndex: 1,
+
+isAnswerCorrect(index){
+    return index === question.correctAnswerIndex;
+},
+
+getCorrectAnswer(){
+    return options[correctAnswerIndex];
+},
+}
 ```js
 const testData = {
   title: 'Where is the capital of Jordan',
