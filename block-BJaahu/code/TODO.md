@@ -46,6 +46,24 @@ function createQuestion(title,options,correctAnswerIndex){
     }
 }
 ```
+```js
+class CreateQuestion{
+    constructor(title,option,correctAnswerIndex){
+        this.title=title;
+        this.option=option;
+        this.correctAnswerIndex=correctAnswerIndex;
+    }
+    isAnswerCorrect(index){
+        return index === this.correctAnswerIndex;
+    }
+    getCorrectAnswer(){
+        return this.option[this.correctAnswerIndex];
+    }
+
+
+}
+```
+
 
 
 ```js
