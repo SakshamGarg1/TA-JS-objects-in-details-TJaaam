@@ -20,6 +20,33 @@ For each different ways of creating object write different solutions.
 ### To test use the following data
 
 You can use the data given below. You will also have to change the name of the function while calling them.
+```js
+let questionMethod={
+
+    isAnswerCorrect(index){
+        return index === this.correctAnswerIndex;
+    },
+    
+    getCorrectAnswer(){
+        return this.options[correctAnswerIndex];
+    },
+}   
+
+function createQuestion(title,options,correctAnswerIndex){
+    let question ={};
+    question.title=title;
+    question.options=options;
+    question.correctAnswerIndex=correctAnswerIndex;
+    question.isCorrectAnswer = function(){
+        return index === this.correctAnswerIndex;
+
+    };
+    question.getCorrectAnswer=function(){
+        return this.options[this.correctAnswerIndex];
+    }
+}
+```
+
 
 ```js
 
