@@ -63,3 +63,47 @@ let Saksham = createUser("saksham",123,23);
 let Ram = createUser("Ram",23,123);
 
 
+//prototypal Method
+
+let userMenthod={
+
+
+    getProjects : function(){
+        return this.noOfProjects;
+    },
+
+    changeName : function(newName){
+         let prvName=this.name;
+         this.name= newName;
+         return prvName;
+    },
+    
+    incrementProject : function(){
+        this.noOfProjects += 1;
+        return noOfProjects
+
+    },
+    
+    decrementProject : function(){
+        this.noOfProjects -= 1;
+        return noOfProjects;
+
+    },
+};
+    function createUser(name,id,noOfProjects){
+    let user =Object.create(userMenthod)
+    user.name=name;
+    user.id=id ;    
+    user.noOfProjects=noOfProjects;
+  return user;
+    };
+
+let Saksham = createUser("saksham",123,23);
+let Ram = createUser("Ram",23,123);
+
+console.group("Saksham");
+
+
+//psudo classical Method
+
+
