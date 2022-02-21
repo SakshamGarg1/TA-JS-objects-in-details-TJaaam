@@ -18,6 +18,7 @@
 
 - Check the `isEqual` method and pass the two instance you created above.
 
+
 ## User Class
 
 - Create a `User` class that accepts `firstName` and `lastName` property
