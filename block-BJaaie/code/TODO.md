@@ -29,6 +29,7 @@ Properties:
 - `name`
 - `color`
 
+
 Methods:
 
 - `bark()` - alerts a message saying `I am ${name} and I can bark 🐶`
