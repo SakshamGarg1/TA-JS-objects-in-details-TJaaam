@@ -28,6 +28,7 @@ Properties:
 
 Methods:
 
+
 - `bark()` - alerts a message saying `I am ${name} and I can bark 🐶`
 - `changeName(newName)` - accepts the name property and updates the name of the dog
 - `changeColor(newColor)` - accepts the new color and updates the color of the dog
