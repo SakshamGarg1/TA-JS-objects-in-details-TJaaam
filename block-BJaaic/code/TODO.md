@@ -52,3 +52,28 @@ Methods:
 - `changeColorOfEyes(newColor)` - accepts the new color and updates the color of the dog
 
 - `summary()` - returns `I am ${name} and the color of my eyes are ${colorOfEyes}. I can also do meow meow`
+- let animalMethods = {
+    eat : function(){
+        console.log(`I live in ${this.location} and I can eat`)
+    },
+
+    changeLocation: function(newLocation){
+        this.location = newLocation;
+        return this.location; 
+
+    },
+
+    summary: function(){
+        console.log(`I live in ${this.location} and I have ${this.numberOfLegs}`);
+
+    },
+
+}
+
+function createAnimal(location,noOfLegs){
+    let obj = Object.create(animalMethods);
+    obj.location = location;
+    obj.noOfLegs= noOfLegs;
+    return obj;
+
+}
