@@ -5,6 +5,7 @@ To understand how stack and queue works look at the following diagrams.
 Stack
 ![Stack](../assets/stack.gif)
 
+
 Queue
 ![Queue](../assets/queue.gif)
 
