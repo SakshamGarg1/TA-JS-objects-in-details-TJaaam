@@ -71,3 +71,41 @@ Make sure that `adminFactory` objects have access to `adminFunctionStore` method
 #### Challenge 5/5
 
 Create a method called `sharePublicMessage` that logs 'Welcome users!' and will be available to `adminFactory` objects, but not `userFactory` objects. Do not add this method directly in the `adminFactory` function.
+
+function makePerson(name, age){
+    let obj ={};
+     obj.name = name;
+    obj.age = age;
+    return obj;
+}
+
+
+let personStore ={
+    greet(){
+        console.log("Hello");
+    }
+};
+
+function personFromPersonStore(name,age){
+    Object.create(personStore);
+    obj.name=name;
+    obj.age = age;
+}   
+personStore.introduce = function(){
+  console.log(`Hi,my name is ${this.name}`);
+};
+
+function PersonConstructor(){
+    this.greet = function (){
+        console.log("hello");
+    };
+     this.introduce= function(){
+         console.log(`Hi,my name is ${this.name}` )
+}};
+
+ function personFromConstructor(name,age){
+    let obj = new PersonConstructor();
+    obj.name = name;
+    obj.age = age;
+    return obj;
+}
