@@ -32,9 +32,9 @@ function MainUser() {
 
 let userSayHello = user.sayHello;
 
-console.log(user.sayHello()); // output / error
-console.log(user2.sayHello()); // output / error
-console.log(user.sayHello.call(user2)); // output / error
+console.log(user.sayHello()); // output / error.  Hello john
+console.log(user2.sayHello()); // output / error. Hello Arya
+console.log(user.sayHello.call(user2)); // output / error Hello.
 console.log(user.sayHello.call(user2, 'Hey')); // output / error
 console.log(user.sayHello.apply(user2, ['Hey'])); // output / error
 console.log(typeof user.sayHello.bind(user2)); // output / error
