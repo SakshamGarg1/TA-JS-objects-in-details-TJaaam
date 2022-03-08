@@ -84,3 +84,34 @@ atmQueue.dequeue();
 atmQueue.dequeue();
 console.log(atmQueue.isEmpty()); // true
 ```
+
+class Stack{
+    Constructor(){
+        this.stack = [];
+    }
+    push(elm) {
+        this.stack.push(elm);
+        return this.stack;
+    }
+    pop(){
+        this.stack.pop();
+        return this.stack;
+    }
+    peek(index = this.stack.length -1){
+        return this.stack[index];
+    } 
+    reverse(){
+        return this.stack.reverse();
+    }
+    isEmpty(){
+         return !(this.stack.length > 0);
+        
+    }
+    displayStack() {
+        return this.stack.join(" ");
+    }
+    get length(){
+
+    }
+        
+ }
